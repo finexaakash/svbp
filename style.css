@@ -18,7 +18,7 @@ h1,h2,h3,p{margin-top:0}h1,h2{font-family:var(--serif);letter-spacing:-.045em}h2
 
 /* Homepage refresh — forest green, warm ivory and amber */
 .home-hero-new{min-height:690px;background:#123f32}
-.home-hero-new .hero-photo{background-image:url("assets/campus-front.webp");background-position:center 43%;filter:saturate(.88)}
+.home-hero-new .hero-photo{background-image:url("assets/college-exterior.jpeg");background-position:center 43%;filter:saturate(.88)}
 .home-hero-new .hero-gradient{background:linear-gradient(90deg,rgba(12,48,37,.96) 0%,rgba(16,63,48,.84) 43%,rgba(18,55,43,.24) 100%),linear-gradient(0deg,rgba(10,37,29,.62),transparent 60%)}
 .home-hero-new .hero-inner{padding-top:94px;padding-bottom:55px}
 .home-hero-new h1{font-size:clamp(54px,7.4vw,94px);max-width:900px;line-height:1.03;letter-spacing:-.055em}

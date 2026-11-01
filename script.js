@@ -91,13 +91,12 @@
   const slideCurrent = document.getElementById("heroSlideCurrent");
   const nextButton = document.getElementById("heroNext");
   const slides = [
-    { image: "assets/campus-front.webp", position: "center 43%", label: "College building" },
+    { image: "assets/college-exterior.jpeg", position: "center 43%", label: "College building" },
     { image: "assets/campus-courtyard.webp", position: "center center", label: "Campus courtyard" },
     { image: "assets/campus-learning-aids.webp", position: "center center", label: "Teaching-learning materials" },
     { image: "assets/campus-computer-room.webp", position: "center center", label: "Computer room" }
   ];
   let activeSlide = 0;
-  let slideTimer;
   const showSlide = (index) => {
     if (!heroPhoto || !slides.length) return;
     activeSlide = (index + slides.length) % slides.length;
@@ -110,26 +109,14 @@
       button.setAttribute("aria-pressed", String(i === activeSlide));
     });
   };
-  const stopSlider = () => { if (slideTimer) window.clearInterval(slideTimer); };
-  const startSlider = () => {
-    stopSlider();
-    if (!reduceMotion && document.visibilityState === "visible") {
-      slideTimer = window.setInterval(() => showSlide(activeSlide + 1), 6000);
-    }
-  };
   if (heroPhoto) {
-    slides.forEach((slide) => { const img = new Image(); img.src = slide.image; });
     slideButtons.forEach((button) => button.addEventListener("click", () => {
       showSlide(Number(button.dataset.slide) || 0);
-      startSlider();
     }));
     if (nextButton) nextButton.addEventListener("click", () => {
       showSlide(activeSlide + 1);
-      startSlider();
     });
-    document.addEventListener("visibilitychange", startSlider);
     showSlide(0);
-    startSlider();
   }
 
   // Give images a clear fallback class if a local filename is missing.
