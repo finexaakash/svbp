@@ -91,10 +91,10 @@
   const slideCurrent = document.getElementById("heroSlideCurrent");
   const nextButton = document.getElementById("heroNext");
   const slides = [
-    { image: "assets/college-exterior.jpeg", position: "center 43%", label: "College building" },
-    { image: "assets/campus-courtyard.webp", position: "center center", label: "Campus courtyard" },
-    { image: "assets/campus-learning-aids.webp", position: "center center", label: "Teaching-learning materials" },
-    { image: "assets/campus-computer-room.webp", position: "center center", label: "Computer room" }
+    { image: "assets/college-entrance.jpeg", position: "center center", label: "College entrance" },
+    { image: "assets/college-front-wide.jpeg", position: "center center", label: "College front" },
+    { image: "assets/college-garden-side.jpeg", position: "center center", label: "College garden" },
+    { image: "assets/college-library-new.jpeg", position: "center center", label: "College library" }
   ];
   let activeSlide = 0;
   const showSlide = (index) => {

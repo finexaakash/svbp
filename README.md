@@ -24,10 +24,10 @@ This is a static website. No backend, database, npm install, or build command is
 Push all files to a GitHub repository and connect it to Cloudflare Pages. Select no framework/build command and set the output directory to the repository root as the Cloudflare interface allows.
 
 ## Important content note
-Confirm faculty names, designations, affiliations, course approvals, facilities and all institutional claims with the college before publishing. The Messages page contains general B.Ed. learning copy, not statements attributed to named leaders. The page uses a lightweight map-style illustration and a link to Google Maps, not a map API.
+Confirm faculty names, designations, affiliations, course approvals, facilities and all institutional claims with the college before publishing. The admissions and facilities content reflects the college flyer supplied for 2026–27. Confirm course availability, eligibility, free-education conditions, staff details and facilities with the college before publishing. The Messages page contains general college copy, not verified quotations from named leaders. The page uses a lightweight map-style illustration and a link to Google Maps, not a map API.
 
 ## Homepage refresh
-The homepage now uses a forest-green, sage, ivory and amber palette with expanded sections for B.Ed. teacher education, pedagogy, learner development, classroom practice, faculty information, campus, admissions and contact details. Confirm institutional claims, admission requirements and facility details with the college before publishing.
+The site uses the supplied navy, indigo, gold and white palette (#020617, #14213d, #4169e1, #f5c842 and #ffffff). The homepage and admissions pages summarize the 2026–27 B.A. and M.A. course information shown in the college flyer. Confirm institutional claims, admission requirements and facility details with the college before publishing.
 
 
 ## Easy edits (no backend required)
@@ -36,7 +36,7 @@ The homepage now uses a forest-green, sage, ivory and amber palette with expande
 The campus gallery uses the supplied photos in `assets/campus-*.webp`. Replace a photo by keeping its filename, or update its references in `campus.html`, `index.html`, `style.css` or `script.js`.
 
 ### Edit faculty details
-The Faculty page summarizes B.Ed. learning areas. Add staff names and designations only after confirming them with the college.
+The Faculty page displays supplied staff-list images. Confirm names and designations with the college before publishing updates.
 
 ### Animation and responsive design
 `script.js` provides scroll-reveal effects, count-up numbers, mobile navigation and automatic footer year. `style.css` includes responsive layouts and reduced-motion support. Keep both files alongside all HTML files.
